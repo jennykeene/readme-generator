@@ -1,5 +1,8 @@
 // TODO: Include packages needed for this application
-
+// bring inquirer lib into this file
+const inquirer = require('inquirer');
+// reference generateMarkdown.js file
+const markdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
 const questions = [];
 
