@@ -7,10 +7,8 @@ const generateMarkdown = require('./utils/generateMarkdown');
 
 
 // TODO: Create an array of questions for user input
-const userInfo = () => {
-    return inquirer.prompt([
-        //begin questions array
-
+const readmeInfo = () => {
+    return inquirer.prompt(
         //github username
         {
             type: 'input',
@@ -25,42 +23,61 @@ const userInfo = () => {
                     return false;
                 }
             }
-        }
-        //github profile link
-
-        //email address
-    ])
-};
-
-const readmeInfo = () => {
-    return inquirer.prompt ([
-        //Description
+        },
         {
             type: 'input',
             name: 'description',
             message: 'Provide a description of your Project',
-            validate: descriptInput => {
-                if (descriptInput) { 
-                    return true;
-                } else {
-                    console.log('Project description is required');
-                    return false;
-                }
-            }
-        }
+        },
         //Installation Instructions
-
+        {
+            type: 'input',
+            name: 'description',
+            message: 'Provide a description of your Project',
+        },
         //Usage Info
-
+        {
+            type: 'input',
+            name: 'description',
+            message: 'Provide a description of your Project',
+        },
         //License
-
+        {
+            type: 'input',
+            name: 'description',
+            message: 'Provide a description of your Project',
+        },
         //Contribution Guidelines
-
+        {
+            type: 'input',
+            name: 'description',
+            message: 'Provide a description of your Project',
+        },
         //Test Instructions
-
+        {
+            type: 'input',
+            name: 'description',
+            message: 'Provide a description of your Project',
+        },
         //Questions
-    ])
-}
+        {
+            type: 'input',
+            name: 'description',
+            message: 'Provide a description of your Project',
+        },
+        //github profile link
+        {
+            type: 'input',
+            name: 'description',
+            message: 'Provide a description of your Project',
+        },
+        //email address
+        {
+            type: 'input',
+            name: 'description',
+            message: 'Provide a description of your Project',
+        }
+)};
 
 
 // TODO: Create a function to write README file
