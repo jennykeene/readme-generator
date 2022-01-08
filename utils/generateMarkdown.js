@@ -20,10 +20,17 @@ ${data.description}
 * Usage
 * Contributors
 * Tests
+* Questions
 ## Installation
+${data.install}
 ## Usage
+${data.usage}
 ## Contributors
+${data.contribution}
 ## Tests
+${data.testing}
+## Questions?
+${data.questions}
 `;
 }
 

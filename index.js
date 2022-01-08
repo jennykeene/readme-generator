@@ -24,6 +24,7 @@ const readmeInfo = () => {
                 }
             }
         },
+        //Description
         {
             type: 'input',
             name: 'description',
@@ -32,38 +33,39 @@ const readmeInfo = () => {
         //Installation Instructions
         {
             type: 'input',
-            name: 'description',
-            message: 'Provide a description of your Project',
+            name: 'install',
+            message: 'Enter instructions on how to install your Project',
         },
         //Usage Info
         {
             type: 'input',
-            name: 'description',
-            message: 'Provide a description of your Project',
+            name: 'usage',
+            message: 'Provide information on how someone can use this Project',
         },
         //License
         {
-            type: 'input',
-            name: 'description',
-            message: 'Provide a description of your Project',
+            type: 'list',
+            name: 'license',
+            message: 'Provide the licensing for your Project',
+            choices: ["MIT","GNU", "None"],
         },
         //Contribution Guidelines
         {
             type: 'input',
-            name: 'description',
-            message: 'Provide a description of your Project',
+            name: 'contribution',
+            message: 'Provide contribution guidelines for your Project',
         },
         //Test Instructions
         {
             type: 'input',
-            name: 'description',
-            message: 'Provide a description of your Project',
+            name: 'testing',
+            message: 'Provide test instructions for your Project',
         },
         //Questions
         {
             type: 'input',
-            name: 'description',
-            message: 'Provide a description of your Project',
+            name: 'questions',
+            message: 'Provide contact info for questions',
         },
         //github profile link
         {
