@@ -9,20 +9,6 @@ const generateMarkdown = require('./utils/generateMarkdown');
 inquirer.prompt(questions, answers) -> promise...
 * questions = array containing Question Object
 * answers = object; contains values of already answered questions
-
-Question Object:
-* type (default is input)
-* name
-* messages
-* choices
-* validate
-* filter
-
-Answers: 
-A key/value hash containing user answers from each prompt
-* key = 'name' property of Question Object
-* value = 'input' or 'confirm'
-
 */
 
 // TODO: Create an array of questions for user input
@@ -42,6 +28,18 @@ const readmeInfo = () => {
                     return false;
                 }
             }
+        },
+        //email address
+        {
+            type: 'input',
+            name: 'email',
+            message: 'What email address can GitHub users contact you at?',
+        },
+        //github profile link
+        {
+            type: 'input',
+            name: 'githubLink',
+            message: 'What is the link to your Github?',
         },
         //Description
         {
@@ -84,19 +82,7 @@ const readmeInfo = () => {
         {
             type: 'input',
             name: 'questions',
-            message: 'Provide contact info for questions',
-        },
-        //github profile link
-        {
-            type: 'input',
-            name: 'description',
-            message: 'Provide a description of your Project',
-        },
-        //email address
-        {
-            type: 'input',
-            name: 'description',
-            message: 'Provide a description of your Project',
+            message: 'Provide contact info for user questions',
         }
     ]); //end of Question Object
 };
@@ -126,12 +112,3 @@ readmeInfo()
 .then(data => {
     return writeFile(data);
 })
-
-// TODO: Create a function to initialize app
-function init() {
-
-};
-
-
-// Function call to initialize app
-init();
