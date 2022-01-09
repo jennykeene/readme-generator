@@ -22,7 +22,7 @@ ${data.license}
 ${data.contribution}
 ## Tests
 ${data.testing}
-## Questions
+## Questions🗨️
 Questions or concerns? Email me at <${data.email}>. </br>
 Or find me on GitHub: [${data.github}](https://github.com/${data.github})
 `;
