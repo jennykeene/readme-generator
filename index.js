@@ -60,7 +60,7 @@ const readmeInfo = () => {
         //github username
         {
             type: 'input',
-            name: 'githubName',
+            name: 'github',
             message: 'What is your GitHub username?',
             //validate user's input
             validate: githubInput => {
@@ -100,8 +100,8 @@ const writeFile = data => {
 
 // call the function to start the user prompts
 readmeInfo() 
-.then(answers => {
-    return generateMarkdown(answers);
+.then(data => {
+    return generateMarkdown(data);
 })
 .then(data => {
     return writeFile(data);

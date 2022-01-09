@@ -1,21 +1,26 @@
 
-# Test Title
+![badge](https://img.shields.io/badge/License-MIT-blue)  
+
+# README Generator
 ## Description
-Test description
+Create an application that generates an README based on user input
 ## Table of Contents
 * [Installation](#Installation)
 * [Usage](#Usage)
+* [License](#License)
 * [Contribution](#Contribution)
 * [Tests](#Tests)
 * [Questions](#Questions)
 ## Installation
-Test installation instructions
+Clone the repo
 ## Usage
-Test Usage info
+Use to develop it
+## License
+MIT
 ## Contribution
-Test how to contribute
+Feel free to use
 ## Tests
-Testing instructions
-## Questions?
-Questions or concerns? Email me at <test@gmail.com>. </br>
-Or find me on GitHub: [undefined](https://github.com/undefined)
+Test instructions
+## Questions
+Questions or concerns? Email me at <jelly@gmail.com>. </br>
+Or find me on GitHub: [jennyk1989](https://github.com/jennyk1989)
