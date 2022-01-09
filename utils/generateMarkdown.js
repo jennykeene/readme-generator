@@ -12,17 +12,17 @@ ${data.description}
 * [Contribution](#Contribution)
 * [Tests](#Tests)
 * [Questions](#Questions)
-## Installation
+## 📥 Installation
 ${data.install}
 ## Usage
 ${data.usage}
-## License
+## 📃 License
 ${data.license}
-## Contribution
+## 💡 Contribution
 ${data.contribution}
 ## Tests
 ${data.testing}
-## Questions🗨️
+## 🖐️ Questions 
 Questions or concerns? Email me at <${data.email}>. </br>
 Or find me on GitHub: [${data.github}](https://github.com/${data.github})
 `;
