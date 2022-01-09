@@ -21,6 +21,8 @@ Example of a generated README.md file:
 <img width="1036" alt="Screen Shot 2022-01-09 at 2 07 42 PM" src="https://user-images.githubusercontent.com/92952780/148699337-9f9fdffe-0080-460f-8739-ee71fa15ab6a.png">
 Preview of the README.md file deployed:
 <img width="1035" alt="Screen Shot 2022-01-09 at 2 08 08 PM" src="https://user-images.githubusercontent.com/92952780/148699341-d4dbcae6-2a0b-4495-ba73-2e86c4096c9d.png">
+README.md file view on GitHub:
+<img width="1121" alt="Screen Shot 2022-01-09 at 2 32 33 PM" src="https://user-images.githubusercontent.com/92952780/148699719-5bd583cf-f107-40c0-9f33-2adaaf4e8f8f.png">
 ### Video
 https://user-images.githubusercontent.com/92952780/148699268-60c47142-5f3c-4491-a0c2-df7f0eb7c1be.mp4
 ## License 📃
