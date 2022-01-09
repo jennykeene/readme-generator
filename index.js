@@ -43,7 +43,7 @@ const readmeInfo = () => {
             type: 'list',
             name: 'license',
             message: 'Provide the licensing for your Project',
-            choices: ["MIT","GNU", "None"],
+            choices: ["MIT","GNU GPLv3", "Apache License 2.0", "SC License", "None"],
         },
         //Contribution Guidelines
         {
