@@ -14,32 +14,11 @@ inquirer.prompt(questions, answers) -> promise...
 // TODO: Create an array of questions for user input
 const readmeInfo = () => {
     return inquirer.prompt([ //start of Question Object
-        //github username
+        //title of project
         {
             type: 'input',
-            name: 'githubName',
-            message: 'What is your GitHub username?',
-            //validate user's input
-            validate: githubInput => {
-                if (githubInput) {
-                    return true;
-                } else {
-                    console.log('Your GitHub username is required');
-                    return false;
-                }
-            }
-        },
-        //email address
-        {
-            type: 'input',
-            name: 'email',
-            message: 'What email address can GitHub users contact you at?',
-        },
-        //github profile link
-        {
-            type: 'input',
-            name: 'githubLink',
-            message: 'What is the link to your Github?',
+            name: 'title',
+            message: 'What is the title of your Project?',
         },
         //Description
         {
@@ -78,11 +57,26 @@ const readmeInfo = () => {
             name: 'testing',
             message: 'Provide test instructions for your Project',
         },
-        //Questions
+        //github username
         {
             type: 'input',
-            name: 'questions',
-            message: 'Provide contact info for user questions',
+            name: 'githubName',
+            message: 'What is your GitHub username?',
+            //validate user's input
+            validate: githubInput => {
+                if (githubInput) {
+                    return true;
+                } else {
+                    console.log('Your GitHub username is required');
+                    return false;
+                }
+            }
+        },
+        //email address
+        {
+            type: 'input',
+            name: 'email',
+            message: 'What email address can GitHub users contact you at?',
         }
     ]); //end of Question Object
 };

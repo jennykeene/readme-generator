@@ -33,6 +33,7 @@ ${data.contribution}
 ${data.testing}
 ## Questions?
 Questions or concerns? Email me at ${data.email}.
+Or find me on GitHub: [${data.github}](https://github.com/${data.github})
 `;
 }
 
