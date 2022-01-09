@@ -1,9 +1,9 @@
 
 ![badge](https://img.shields.io/badge/License-MIT-blue)  
 
-# Project Title here
+# Name of Project here
 ## Description
-Type in a description of your project here
+Type a description of your project here
 ## Table of Contents
 * [Installation](#Installation)
 * [Usage](#Usage)
@@ -11,16 +11,16 @@ Type in a description of your project here
 * [Contribution](#Contribution)
 * [Tests](#Tests)
 * [Questions](#Questions)
-## Installation
-How to install your project
+## Installation 📥
+Type instructions on how to install your application here
 ## Usage
-Usage of your project
-## License
+Type usage guidelines here
+## License 📃 
 MIT
-## Contribution
-No contribution accepted at this time
+## Contribution 💡
+Type how or if someone can contribute to your project
 ## Tests
-If your project includes testing, include the testing instructions here
-## Questions🗨️
+Provide testing instructions (if any) here
+## Questions 🖐️
 Questions or concerns? Email me at <jkeenepharmd@gmail.com>. </br>
 Or find me on GitHub: [jennyk1989](https://github.com/jennyk1989)
