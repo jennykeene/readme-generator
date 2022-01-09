@@ -1,22 +1,41 @@
 // TODO: Include packages needed for this application
-// bring inquirer lib into this file
-const inquirer = require('inquirer');
-const fs = require('fs');
-// reference generateMarkdown.js file
-const generateMarkdown = require('./utils/generateMarkdown');
+const inquirer = require('inquirer'); //imports Inquirer library here
+const fs = require('fs'); //imports File System here
 
+// imports generateMarkdown.js file
+const generateMarkdown = require('./utils/generateMarkdown'); 
+
+/* One Inquirer method: 
+inquirer.prompt(questions, answers) -> promise...
+* questions = array containing Question Object
+* answers = object; contains values of already answered questions
+
+Question Object:
+* type (default is input)
+* name
+* messages
+* choices
+* validate
+* filter
+
+Answers: 
+A key/value hash containing user answers from each prompt
+* key = 'name' property of Question Object
+* value = 'input' or 'confirm'
+
+*/
 
 // TODO: Create an array of questions for user input
 const readmeInfo = () => {
-    return inquirer.prompt(
+    return inquirer.prompt([ //start of Question Object
         //github username
         {
             type: 'input',
             name: 'githubName',
             message: 'What is your GitHub username?',
             //validate user's input
-            validate: githubNameInput => {
-                if (githubNameInput) {
+            validate: githubInput => {
+                if (githubInput) {
                     return true;
                 } else {
                     console.log('Your GitHub username is required');
@@ -79,14 +98,13 @@ const readmeInfo = () => {
             name: 'description',
             message: 'Provide a description of your Project',
         }
-)};
-
+    ]); //end of Question Object
+};
 
 // TODO: Create a function to write README file
-
-const writeFile = fileContent => {
+const writeFile = data => {
     return new Promise ((resolve, reject) => {
-        fs.writeFile('./dist/README.md', fileContent, err => {
+        fs.writeFile('./dist/README.md', data, err => {
             if (err) {
                 reject(err)
                 return;
@@ -94,18 +112,24 @@ const writeFile = fileContent => {
 
             resolve({
                 ok: true,
-                message: 'Readme file created!'
+                message: 'Readme file created!' //let's user know if input successful
             });
         });
     }) 
 };
 
-module.exports = { writeFile };
+// call the function to start the user prompts
+readmeInfo() 
+.then(answers => {
+    return generateMarkdown(answers);
+})
+.then(data => {
+    return writeFile(data);
+})
 
 // TODO: Create a function to initialize app
 function init() {
-    readmeInfo()
-        .then(data)
+
 };
 
 
